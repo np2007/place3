@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'base/base1.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info</title>
+</head>
+<body>
+{% block base_block %}
+<div class="container" align="center">
+    <h4 style="color:blue">PLACEMENT PREDICATION</h4>
+    <h6 style="color:green"> Please fill the following information carefully </h6>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" name="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

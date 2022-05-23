@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base/base1.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+</head>
+<body>
+{% block base_block %}
+<div class="container" align="center">
+    <h4 style="color:blue"> PLACEMENT PREDICATION </h4>
+    {% if result == 'Placed' %}
+         <h5 style="color:green">Congratulations... You Have chances to Place....!!!....Prepare well...!!&#127942</h5>
+    {% elif result == 'Not Placed' %}
+        <h5 style="color:red">Sorry....!!...You have less chance to Place...!! Improve Skill sets...&#128554 </h5>
+    {% else %}
+        <h5 style="color:blue">Error</h5>
+    {% endif %}
+</div>
+{% endblock %}
+</body>
+</html>
